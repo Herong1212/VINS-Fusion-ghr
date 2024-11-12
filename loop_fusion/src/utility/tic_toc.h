@@ -1,8 +1,8 @@
 /*******************************************************
  * Copyright (C) 2019, Aerial Robotics Group, Hong Kong University of Science and Technology
- * 
+ *
  * This file is part of VINS.
- * 
+ *
  * Licensed under the GNU General Public License v3.0;
  * you may not use this file except in compliance with the License.
  *******************************************************/
@@ -15,7 +15,7 @@
 
 class TicToc
 {
-  public:
+public:
     TicToc()
     {
         tic();
@@ -33,6 +33,6 @@ class TicToc
         return elapsed_seconds.count() * 1000;
     }
 
-  private:
+private:
     std::chrono::time_point<std::chrono::system_clock> start, end;
 };
